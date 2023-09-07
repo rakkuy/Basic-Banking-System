@@ -6,32 +6,32 @@ class BankAccount {
   }
 
   // Metode setor() untuk menambahkan dana ke rekening
-  setor(jumlah) {
+  deposit(amount) {
     console.log(
-      `Memulai setor sebesar ${jumlah} ke rekening ${this.nomorRekening}`
+      `Memulai setor sebesar ${amount} ke rekening ${this.nomorRekening}`
     );
     setTimeout(() => {
-      this.saldo += jumlah;
+      this.saldo += amount;
       console.log(
-        `Setor sebesar ${jumlah} berhasil. Saldo saat ini: ${this.saldo}`
+        `Setor sebesar ${amount} berhasil. Saldo saat ini: ${this.saldo}`
       );
     }, 2000); // Menggunakan setTimeout() untuk mensimulasikan operasi asynchronous
   }
 
   // Metode tarik() untuk menarik dana dari rekening
-  tarik(jumlah) {
+  withdraw(amount) {
     console.log(
-      `Memulai penarikan sebesar ${jumlah} dari rekening ${this.nomorRekening}`
+      `Memulai penarikan sebesar ${amount} dari rekening ${this.nomorRekening}`
     );
     setTimeout(() => {
-      if (jumlah <= this.saldo) {
-        this.saldo -= jumlah;
+      if (amount <= this.saldo) {
+        this.saldo -= amount;
         console.log(
-          `Penarikan sebesar ${jumlah} berhasil. Saldo saat ini: ${this.saldo}`
+          `Penarikan sebesar ${amount} berhasil. Saldo saat ini: ${this.saldo}`
         );
       } else {
         console.log(
-          `Penarikan sebesar ${jumlah} gagal. Saldo tidak mencukupi.`
+          `Penarikan sebesar ${amount} gagal. Saldo tidak mencukupi.`
         );
       }
     }, 2000); // Menggunakan setTimeout() untuk mensimulasikan operasi asynchronous
@@ -42,6 +42,6 @@ class BankAccount {
 const rekening1 = new BankAccount(12345, 1000);
 
 // Melakukan setor dan tarik dengan operasi asynchronous
-rekening1.setor(500);
-rekening1.tarik(200);
-rekening1.tarik(1500);
+rekening1.deposit(500);
+rekening1.withdraw(200);
+rekening1.withdraw(1500);
