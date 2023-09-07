@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Account Management</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 2rem;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 1rem;
+      }
+
+      #saldoDisplay {
+        font-weight: bold;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bank Account Management</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <p>Your Account Balance: <span id="saldoDisplay">Rp 0</span></p>
+
+        <div class="buttons">
+          <button class="button" onclick="tambahSaldo()">
+            Tambahkan Saldo
+          </button>
+          <button class="button" onclick="kurangiSaldo()">Kurangi Saldo</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="bank_account.js"></script>
+  </body>
+</html>
