@@ -26,7 +26,7 @@ Dalam studi kasus ini, kita akan membuat sebuah Basic Banking System sederhana m
 
 # Langkah – Langkah commit dan push:
 
-1. Git init
+1. Git init (Hanya sekali saat pertama membuat repositori)
    git init adalah perintah yang digunakan untuk membuat repository Git baru atau menginisialisasi repository Git pada direktori yang sudah ada. Ketika Anda menjalankan perintah git init dalam sebuah direktori, Git akan membuat direktori tersebut menjadi sebuah repository Git kosong yang dapat digunakan untuk melacak perubahan pada berkas-berkas dalam proyek Anda.
 
 2. Git add nama_file
@@ -48,7 +48,7 @@ Dalam studi kasus ini, kita akan membuat sebuah Basic Banking System sederhana m
 3. Git commit -m “Ini adalah pesan komit Anda”
    git commit -m "Comment" adalah perintah Git yang digunakan untuk membuat sebuah commit dengan pesan komit (commit message) yang disertakan. Commit message digunakan untuk memberikan deskripsi singkat tentang perubahan yang Anda lakukan dalam commit tersebut. Pesan komit ini penting karena membantu Anda dan orang lain yang bekerja pada proyek untuk memahami tujuan dari perubahan yang Anda lakukan dalam commit tersebut.
 
-4. Git branch -M main
+4. Git branch -M main (Hanya sekali saat pertama membuat repositori)
    Perintah git branch -M main adalah perintah Git yang digunakan untuk mengubah nama branch saat ini menjadi main. Biasanya, ini digunakan dalam konteks migrasi dari istilah "master" yang sebelumnya digunakan dalam beberapa repository Git sebagai nama branch default menjadi "main" sebagai nama branch default yang lebih inklusif.
    Perintah ini memiliki dua komponen utama:
    • git branch
